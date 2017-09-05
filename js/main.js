@@ -9,6 +9,28 @@ var tipsList = [
   "Work With Multi-Line Strings <span class='code-block'>multiStr= (&quot;select * from multi_row &quot;</br>&quot;where row_id < 5 &quot;</br>&quot;order by age&quot;)</br>print(multiStr)</span><span class='output'>&gt;&gt; select * from multi_row where row_id < 5 order by age</span><span class='source'>Source: <a href='http://www.techbeamers.com/essential-python-tips-tricks-programmers/'>Techbeamers.com</a></span>",
 
   "Storing list elements in a new variable <span class='code-block'>testList = [1,2,3]</br>x, y, z = testList</br>print(x, y, z)</span><span class='output'>&gt;&gt; 1, 2, 3</span><span class='source'>Source: <a href='http://www.techbeamers.com/essential-python-tips-tricks-programmers/'>Techbeamers.com</a></span>",
+
+  "Get the file path of an imported module <span class='code-block'>import threading</br>import socket</br>print(threading)</br>print(socket)</span><span class='output'>&gt;&gt; &lt;module 'threading' from '/usr/lib/python2.7/threading.py'&gt;</br>&gt;&gt; &lt;module 'socket' from '/usr/lib/python2.7/socket.py'&gt;</span><span class='source'>Source: <a href='http://www.techbeamers.com/essential-python-tips-tricks-programmers/'>Techbeamers.com</a></span>",
+
+  "Use '_' in the console to reference to output of last executed expression<span class='code-block'>2 + 1</br>print _</span><span class='output'>&gt;&gt; 3</span><span class='source'>Source: <a href='http://www.techbeamers.com/essential-python-tips-tricks-programmers/'>Techbeamers.com</a></span>",
+
+	"Like list comprehensions there exist also dictionary and set comprehensions<span class='code-block'>testDict = {i: i * i for i in range(10)}</br>testSet = {i * 2 for i in range(10)}</br>print(testSet)</br>print(testDict)</span><span class='output'>&gt;&gt; set([0, 2, 4, 6, 8, 10, 12, 14, 16, 18])</br>&gt;&gt; #{0: 0, 1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64, 9: 81}</span><span class='source'>Source: <a href='http://www.techbeamers.com/essential-python-tips-tricks-programmers/'>Techbeamers.com</a></span>",
+
+  "Set breakpoints for debugging<span class='code-block'>import pdb</br>pdb.set_trace()</span><span class='source'>Source: <a href='http://www.techbeamers.com/essential-python-tips-tricks-programmers/'>Techbeamers.com</a></span>",
+
+  "Use dir() to inspect objects<span class='code-block'>test = [1, 3, 5, 7]</br>print( dir(test) )</span><span class='source'>Source: <a href='http://www.techbeamers.com/essential-python-tips-tricks-programmers/'>Techbeamers.com</a></span>",
+
+  "Simplified if-statement<span class='code-block'>if m in [1,3,5,7]:</span>instead of:<span class='code-block'>if m==1 or m==3 or m==5 or m==7:</span><span class='source'>Source: <a href='http://www.techbeamers.com/essential-python-tips-tricks-programmers/'>Techbeamers.com</a></span>",
+
+	"Join strings<span class='code-block'>test = ['I', 'Like', 'Python', 'automation']</br>print(' '.join(test))</span><span class='output'>&gt;&gt; I like Python automation</span><span class='source'>Source: <a href='http://www.techbeamers.com/essential-python-tips-tricks-programmers/'>Techbeamers.com</a></span>",
+
+	"Reversing strings and lists 1<span class='code-block'>testList = [1, 3, 5]</br>testList.reverse()</br>print(testList)</span><span class='output'>&gt;&gt; [5, 3, 1]</span><span class='source'>Source: <a href='http://www.techbeamers.com/essential-python-tips-tricks-programmers/'>Techbeamers.com</a></span>",
+
+	"Reversing strings and lists 2<span class='code-block'>for element in reversed([1,3,5]): print(element)</span><span class='output'>&gt;&gt; 5</br>&gt;&gt; 3</br>&gt;&gt; 1</span><span class='source'>Source: <a href='http://www.techbeamers.com/essential-python-tips-tricks-programmers/'>Techbeamers.com</a></span>",
+
+	"Reversing strings and lists 3<span class='code-block'>print('Test Python'[::-1])</span><span class='output'>&gt;&gt; nohtyP tseT</span><span class='source'>Source: <a href='http://www.techbeamers.com/essential-python-tips-tricks-programmers/'>Techbeamers.com</a></span>",
+
+	"Reversing strings and lists 4<span class='code-block'>print([1, 3, 5][::-1])</span><span class='output'>&gt;&gt; [5, 3, 1]</span><span class='source'>Source: <a href='http://www.techbeamers.com/essential-python-tips-tricks-programmers/'>Techbeamers.com</a></span>",
 ];
 
 // Tip Limit counter

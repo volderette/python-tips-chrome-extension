@@ -24,10 +24,17 @@ body {
   font-size: 1.375rem;
   border-radius: 0.15em;
 }
-
+.code-block::before {
+  content: "Input:\A";
+  /*padding: 0.4em;
+  background: rgba(76, 111, 134, 0.5);*/
+  font-size: 0.8em;
+  white-space: pre;
+  color: rgba(255, 170, 170, 0.5);
+}
 .code-block {
   font-family: monaco, Consolas, "Lucida Console", monospace;
-  background-color: #336180;
+  background-color: rgba(33, 61, 80, 0.5);
   padding: 0.5em 0.75em;
   font-size: 1.15rem;
   border-radius: 0.15rem;
@@ -35,8 +42,18 @@ body {
   margin: 1rem 0;
 }
 
+.output::before {
+  content: "Output:\A";
+  /*padding: 0.4em;
+  background: rgba(76, 111, 134, 0.5);*/
+  font-size: 0.8em;
+  white-space: pre;
+  color: rgba(170, 255, 170, 0.5);
+}
+
 .output {
   font-family: monaco, Consolas, "Lucida Console", monospace;
+  background-color: rgba(33, 61, 80, 0.3);
   padding: 0.25em 0.75em;
   font-size: 1.15rem;
   display: block;
